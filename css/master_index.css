@@ -1,0 +1,35 @@
+.module_box {
+    display: inline-block;
+    vertical-align: top;
+    width: 12.8rem;
+    height: 7.5rem;
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+    margin-top:.8rem;
+    background: #ddd;
+    border-radius: .2rem;
+}
+.title_master {
+    display: inline-block;
+    font-size: .55rem;
+    color:rgb(107,125,128);
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    margin-top: .3rem;
+    vertical-align: top;
+    margin-bottom: 1.5rem;
+}
+.button_master {
+    width: 4.4rem;
+    height: 3.6rem;
+    background: #fff;
+    line-height: 3.6rem;
+    color:rgb(158,158,158);
+    text-align: center;
+    font-size: .42rem;
+    margin-left: .9rem;
+    margin-right:.9rem;
+    border-radius: .2rem;
+}
+

@@ -1,0 +1,67 @@
+.module_login {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2.59rem;
+    background: rgb(234,234,234);
+    width: 5.94rem;
+    margin-left: 6.63rem;
+    margin-right: 6.63rem;
+    height: 4.5rem;
+    border-radius: .13rem;
+}
+.title_login {
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+    font-size: .35rem;
+    margin-top: .28rem;
+    color: rgb(107,125,128);
+}
+.label_user,.label_password {
+    display: inline-block;
+    vertical-align: top;
+    height: .44rem;
+    width: .44rem;
+    margin-right: .1rem;
+    margin-top: .05rem;
+}
+.img_user,.img_password {
+    height: 100%;
+    width: 100%;
+}
+.module_password {
+    margin-top: .32rem;
+    margin-left: .61rem;
+}
+.module_user {
+    margin-top: .58rem;
+    margin-left: .61rem;
+}
+#input_user:focus,#input_password:focus {
+    border-color: rgb(253,188,34);
+}
+#input_user::placeholder,#input_password::placeholder{
+    color: rgb(158,158,158);
+}
+#input_user,#input_password {
+    display: inline-block;
+    vertical-align: top;
+    height: .53rem;
+    width: 4.23rem;
+    font-size: .25rem;
+    color: rgb(158,158,158);
+    border-radius: .1rem;
+    text-indent: .1rem;
+    border: .02rem solid rgb(234,234,234);
+}
+#button_login {
+    background: rgb(65,215,160);
+    width: 4.26rem;
+    margin-top: .84rem;
+    height: .56rem;
+    line-height: .56rem;
+    font-size: .29rem;
+    color: #fff;
+    margin-left: .83rem;
+    border-radius: .07rem;
+}

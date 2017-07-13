@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Microsoft YaHei UI";
+    font-size:.16rem;
+    -webkit-font-smoothing: antialiased;
+}
+button {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    cursor: pointer;
+}
+input {
+    border: 0;
+    outline: 0;
+    background: #fff;
+}
+ul,li {
+    list-style: none;
+}

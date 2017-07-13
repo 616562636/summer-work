@@ -1,0 +1,176 @@
+.module_topBar {
+    width: 100%;
+    height: .8rem;
+    background: rgb(82,184,180);
+}
+.button_back,.button_search {
+    display: inline-block;
+    vertical-align: top;
+    background: inherit;
+    height: .8rem;
+    line-height: .8rem;
+    width: .8rem;
+}
+.button_back .img_back {
+    width: .3rem;
+    margin-top: .13rem;
+    margin-left: -.03rem;
+}
+.title_topBar {
+    display: inline-block;
+    vertical-align: top;
+
+    color: #fff;
+    font-weight: normal;
+    font-size: .36rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    width: calc(100% - 1.8rem);
+}
+.button_search .img_search {
+    width: .5rem;
+    margin-top: .12rem;
+    margin-right: .05rem;
+}
+.collection_pageBar {
+    height: 1rem;
+    font-size: 0;
+}
+.collection_pageBar li {
+    display: inline-block;
+    vertical-align: top;
+    height: 1rem;
+    width: 2.5rem;
+    font-size: .4rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.hr_status {
+    position: absolute;
+    width: 2.2rem;
+    left: .1rem;
+    background: #000;
+    height: .03rem;
+}
+.module_interaction {
+    display: inline-block;
+    vertical-align: top;
+    background: #dbfff1;
+    width: 3.01rem;
+    height: 1rem;
+    font-size: .16rem;
+    border-right: .01rem solid #000;
+}
+.module_guideBar {
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
+    width: 100%;
+    border-top: .01rem solid #000;
+    font-size: 0;
+}
+.button_collect,.button_contact {
+    width: .75rem;
+    height: .75rem;
+    border: .01rem solid #000;
+    border-radius: .1rem;
+    margin-top: .1rem;
+}
+.button_collect {
+    margin-left: .33rem;
+    margin-right: .72rem;
+}
+.button_collect .img_collect, .button_contact .img_contact {
+    margin-top: .05rem;
+    width: .5rem;
+}
+.module_deal {
+    display: inline-block;
+    vertical-align: top;
+    height: 1rem;
+    width: 4.46rem;
+    background: #c2e6ff;
+    font-size: 0;
+}
+.button_shoppingCart,.button_purchase {
+    display: inline-block;
+    vertical-align: top;
+    height: 1rem;
+    width: 50%;
+    background: inherit;
+    font-size: .4rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #ff4a00;
+}
+.button_shoppingCart {
+    border-right: .01rem solid #000;
+}
+.img_intro {
+    width: 100%;
+    height: 3.5rem;
+}
+.title_intro {
+    font-weight: normal;
+    font-size: .35rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-indent: .3rem;
+}
+.item_price {
+    display: inline-block;
+    vertical-align: top;
+    font-size: .35rem;
+    width: 2.5rem;
+    height: 1.1rem;
+    /*line-height: 1.1rem;*/
+    text-align: center;
+}
+.collection_price {
+    font-size: 0;
+    height: 1.1rem;
+}
+.show_price {
+    height: .55rem;
+    line-height: .55rem;
+}
+.show_quantity {
+    height: .55rem;
+    line-height: .55rem;
+}
+.img_ad {
+    width: 6.3rem;
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+.module_intro,.module_joke {
+    height: 10.5rem;
+    overflow: scroll;
+}
+.collection_joke {
+    padding-top: .48rem;
+}
+.item_joke {
+    display: block;
+    height: 1.76rem;
+    width: 100%;
+    margin-bottom: .48rem;
+}
+.img_jokeSponsor {
+    display: inline-block;
+    vertical-align: top;
+    width: .73rem;
+
+    margin-top: .15rem;
+    margin-left: .2rem;
+}
+.text_joke {
+    display: inline-block;
+    vertical-align: top;
+    width: 5.76rem;
+    height: 1.76rem;
+    border-radius: .1rem;
+    border:.01rem solid #000;
+    margin-left: .3rem;
+}

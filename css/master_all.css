@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Microsoft YaHei UI";
+    font-size:.16rem;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: linear-gradient(45deg,rgb(0,188,182),rgb(82,215,97)) no-repeat fixed;
+}
+button {
+    border: 0;
+    outline: 0;
+    background: #fff;
+    cursor: pointer;
+}
+input {
+    border: 0;
+    outline: 0;
+    background: #fff;
+}
+ul,li {
+    list-style: none;
+}

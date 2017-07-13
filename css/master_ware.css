@@ -1,0 +1,69 @@
+.title_ware {
+    height: 1.13rem;
+    line-height: 1.13rem;
+    font-weight: normal;
+    font-size: .55rem;
+    text-align: center;
+}
+#button_upload {
+    margin-top: .1rem;
+    margin-bottom: .68rem;
+    background: #aaa;
+    height: .65rem;
+    line-height: .65rem;
+    width: 2rem;
+    border-radius: .15rem;
+    color: #fff;
+    font-size: .25rem;
+    text-align: center;
+}
+.module_ware {
+    margin-left: .85rem;
+}
+.item_ware {
+    display: inline-block;
+    vertical-align: top;
+    width: 3.2rem;
+    height: 4.05rem;
+    background: #ddd;
+    border-radius: .1rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.item_ware .img_ware {
+    width: 100%;
+    max-height: 2.35rem;
+    border-top-left-radius: .1rem;
+    border-top-right-radius: .1rem;
+    border-bottom: .02em solid #000;
+}
+.detail_ware {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.85rem;
+}
+.operate_ware {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.25rem;
+}
+.button_edit,.button_delete {
+    display: block;
+    background: inherit;
+    border: .01rem solid #000;
+    width: 1.2rem;
+    text-align: center;
+    line-height: .5rem;
+    height: .5rem;
+    font-size: .25rem;
+    margin-top: .2rem;
+    margin-bottom: .25rem;
+    border-radius: .05rem;
+}
+.detail_ware p {
+    font-size: .22rem;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-left:.2rem;
+}
