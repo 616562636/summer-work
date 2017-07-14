@@ -27,9 +27,7 @@
         </div>
         <div class="swiper-container" id="module_activity">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: red;">slider1</div>
-                <div class="swiper-slide" style="background: blue;">slider2</div>
-                <div class="swiper-slide" style="background: #000;">slider3</div>
+                <div class="swiper-slide" v-for="item in adUrl"><img src="" v-bind:data-src="item.pic" v-on:click="skip2activity(item.url)" alt="" class="img_ad"></div>
             </div>
             <button type="button" class="button_prev">
                 <img src="img/left.png" alt="" class="img_prev">

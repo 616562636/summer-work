@@ -7,91 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="css/master_upload.css">
     <link rel="stylesheet" href="css/master_all.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/vue.min.js"></script>
     <script src="js/fontSize.js"></script>
+    <script src="js/master_upload.js"></script>
 </head>
-<body id="app">
-    <div id="module_choice" style="display: none;">
-        <ul class="ul_choice">
-            <li class="item_choice">12</li>
-            <li class="item_choice">23</li>
-            <li class="item_choice">34</li>
-        </ul>
-        <button id="button_choice">确定</button>
+<body>
+    <div id="module_upload">
+        <div id="module_choice" style="display: none;">
+            <ul class="ul_choice">
+                <li class="item_choice">12</li>
+                <li class="item_choice">23</li>
+                <li class="item_choice">34</li>
+            </ul>
+            <button id="button_choice">确定</button>
+        </div>
+        <header class="module_header">
+            <h1 class="title_upload">上架商品</h1>
+        </header>
+        <div class="module_detail">
+            <div class="module_title">
+                <label for="input_title" class="label_title">商品标题：</label>
+                <input type="text" id="input_title" v-model="title" placeholder="20字以内">
+            </div>
+            <div class="module_pic">
+                <h1 class="title_pic">商品图片：</h1>
+                <!--图片-->
+                <div id="area_pic">+</div>
+            </div>
+            <div class="collection_price">
+                <div class="item_price">
+                    <div class="module_num">
+                        <label for="input_num1" class="label_num">商品数量：</label>
+                        <input type="text" id="input_num1" class="input_num">
+                    </div>
+                    <div class="module_price">
+                        <label for="input_price1" class="label_price">对应价格：</label>
+                        <input type="text" id="input_price1" class="input_price">
+                    </div>
+                </div>
+                <div class="item_price">
+                    <div class="module_num">
+                        <label for="input_num2" class="label_num">商品数量：</label>
+                        <input type="text" id="input_num2" class="input_num">
+                    </div>
+                    <div class="module_price">
+                        <label for="input_price2" class="label_price">对应价格：</label>
+                        <input type="text" id="input_price2" class="input_price">
+                    </div>
+                </div>
+                <div class="item_price">
+                    <div class="module_num">
+                        <label for="input_num3" class="label_num">商品数量：</label>
+                        <input type="text" id="input_num3" class="input_num">
+                    </div>
+                    <div class="module_price">
+                        <label for="input_price3" class="label_price">对应价格：</label>
+                        <input type="text" id="input_price3" class="input_price">
+                    </div>
+                </div>
+            </div>
+            <div class="module_stock">
+                <label for="input_stock" class="label_stock">库存：</label>
+                <input type="text" id="input_stock">
+            </div>
+            <div class="module_style">
+                <h1 class="title_style">样式：</h1>
+                <div class="collection_style">
+                    <input type="text" class="item_style">
+                </div>
+                <button id="button_addStyle">+</button>
+            </div>
+            <div class="module_type">
+                <h1 class="title_type">商品类别：</h1>
+                <!--<div class="choice_first"><span class="triangle"></span></div>-->
+                <!--<div class="choice_second"><span class="triangle"></span></div>-->
+                <select name="collection_typeFirst" v-model="category" id="collection_typeFirst">
+                    <option value="1">社团活动物资</option>
+                    <option value="2">社团内部物资</option>
+                </select>
+                <select name="collection_typeSecond" id="collection_typeSecond">
+                    <option value="">23</option>
+                </select>
+            </div>
+            <div class="module_tag">
+                <h1 class="title_tag">标签：</h1>
+                <input type="text" class="item_tag">
+                <input type="text" class="item_tag">
+                <input type="text" class="item_tag">
+            </div>
+            <div class="module_longPic">
+                <h1 class="title_longPic">商品长图</h1>
+                <div class="area_longPic">+</div>
+            </div>
+        </div>
+        <button id="button_upload" v-on:click="addWare">确定上架</button>
     </div>
-    <header class="module_header">
-        <h1 class="title_upload">上架商品</h1>
-    </header>
-    <div class="module_detail">
-        <div class="module_title">
-            <label for="input_title" class="label_title">商品标题：</label>
-            <input type="text" id="input_title" placeholder="20字以内">
-        </div>
-        <div class="module_pic">
-            <h1 class="title_pic">商品图片：</h1>
-            <!--图片-->
-            <div id="area_pic">+</div>
-        </div>
-        <div class="collection_price">
-            <div class="item_price">
-                <div class="module_num">
-                    <label for="input_num1" class="label_num">商品数量：</label>
-                    <input type="text" id="input_num1" class="input_num">
-                </div>
-                <div class="module_price">
-                    <label for="input_price1" class="label_price">对应价格：</label>
-                    <input type="text" id="input_price1" class="input_price">
-                </div>
-            </div>
-            <div class="item_price">
-                <div class="module_num">
-                    <label for="input_num2" class="label_num">商品数量：</label>
-                    <input type="text" id="input_num2" class="input_num">
-                </div>
-                <div class="module_price">
-                    <label for="input_price2" class="label_price">对应价格：</label>
-                    <input type="text" id="input_price2" class="input_price">
-                </div>
-            </div>
-            <div class="item_price">
-                <div class="module_num">
-                    <label for="input_num3" class="label_num">商品数量：</label>
-                    <input type="text" id="input_num3" class="input_num">
-                </div>
-                <div class="module_price">
-                    <label for="input_price3" class="label_price">对应价格：</label>
-                    <input type="text" id="input_price3" class="input_price">
-                </div>
-            </div>
-        </div>
-        <div class="module_stock">
-            <label for="input_stock" class="label_stock">库存：</label>
-            <input type="text" id="input_stock">
-        </div>
-        <div class="module_style">
-            <h1 class="title_style">样式：</h1>
-            <div class="collection_style">
-                <input type="text" class="item_style">
-            </div>
-            <button id="button_addStyle">+</button>
-        </div>
-        <div class="module_type">
-            <h1 class="title_type">商品类别：</h1>
-            <!--<div class="choice_first"><span class="triangle"></span></div>-->
-            <!--<div class="choice_second"><span class="triangle"></span></div>-->
-            <select name="collection_typeFirst" id="collection_typeFirst">
-                <option value="">12</option>
-            </select>
-            <select name="collection_typeSecond" id="collection_typeSecond">
-                <option value="">23</option>
-            </select>
-        </div>
-        <div class="module_tag">
-            <h1 class="title_tag">标签：</h1>
-            <input type="text" class="item_tag">
-            <input type="text" class="item_tag">
-            <input type="text" class="item_tag">
-        </div>
-    </div>
-    <button id="button_upload">确定上架</button>
 </body>
 </html>
