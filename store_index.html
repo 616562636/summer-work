@@ -15,64 +15,66 @@
     <script src="js/store_index.js"></script>
 </head>
 <body>
-    <div class="module_topBar">
-        <button type="button" class="button_back">
-            <img src="img/left.png" alt="" class="img_back">
-        </button>
-        <h1 class="title_topBar">社团物资采购系统</h1>
-        <button type="button" class="button_search">
-            <img src="img/search.png" alt="" class="img_search">
-        </button>
-    </div>
-    <div class="swiper-container" id="module_activity">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background: red;">slider1</div>
-            <div class="swiper-slide" style="background: blue;">slider2</div>
-            <div class="swiper-slide" style="background: #000;">slider3</div>
+    <div id="module_index">
+        <div class="module_topBar">
+            <button type="button" class="button_back">
+                <img src="img/left.png" alt="" class="img_back">
+            </button>
+            <h1 class="title_topBar">社团物资采购系统</h1>
+            <button type="button" class="button_search">
+                <img src="img/search.png" alt="" class="img_search">
+            </button>
         </div>
-        <button type="button" class="button_prev">
-            <img src="img/left.png" alt="" class="img_prev">
-        </button>
-        <button type="button" class="button_next">
-            <img src="img/left.png" alt="" class="img_next">
-        </button>
-    </div>
-    <img src="img/titleBar_shadow.png" alt="" class="img_barShadow">
-    <div class="module_ware">
-        <div class="collection_type">
-            <button  type="button" class="button_pitch">摆摊</button>
-            <button type="button" class="button_party">晚会</button>
-            <button type="button" class="button_meeting">会议</button>
+        <div class="swiper-container" id="module_activity">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: red;">slider1</div>
+                <div class="swiper-slide" style="background: blue;">slider2</div>
+                <div class="swiper-slide" style="background: #000;">slider3</div>
+            </div>
+            <button type="button" class="button_prev">
+                <img src="img/left.png" alt="" class="img_prev">
+            </button>
+            <button type="button" class="button_next">
+                <img src="img/left.png" alt="" class="img_next">
+            </button>
         </div>
-        <ul class="collection_ware">
-           <li class="item_ware" v-for="item in json">
-               <div class="firstPattern" v-if="(item.index)%2==1">
-                   <img src="img/pattern1.png" alt="" class="img_pattern1">
-                   <div class="show_ware">
-                        <h1 class="title_ware" v-text="item.title"></h1>
-                        <ul class="collection_label">
-                           <li class="item_label" v-for="item in item.label" v-text="item"></li>
-                        </ul>
-                   </div>
-                   <img src="" alt="12" class="img_ware">
-               </div>
-               <div class="secondPattern" v-if="(item.index)%2==0">
-                   <img src="" alt="" class="img_ware">
-                   <div class="show_ware">
-                       <h1 class="title_ware" v-text="item.title"></h1>
-                       <ul class="collection_label">
-                           <li class="item_label" v-for="item in item.label" v-text="item"></li>
-                       </ul>
-                   </div>
-                   <img src="img/pattern2.png" alt="" class="img_pattern2">
-               </div>
-           </li>
-        </ul>
-    </div>
-    <div class="module_guideBar">
-        <button type="button" class="button_material">活动物资</button>
-        <button type="button" class="button_me">我的</button>
-        <button type="button" class="button_gift">送给社员</button>
+        <img src="img/titleBar_shadow.png" alt="" class="img_barShadow">
+        <div class="module_ware">
+            <div class="collection_type">
+                <button  type="button" class="button_pitch">摆摊</button>
+                <button type="button" class="button_party">晚会</button>
+                <button type="button" class="button_meeting">会议</button>
+            </div>
+            <ul class="collection_ware">
+                <li class="item_ware" v-for="item in json">
+                    <div class="firstPattern" v-if="(item.index)%2==1">
+                        <img src="img/pattern1.png" alt="" class="img_pattern1">
+                        <div class="show_ware">
+                            <h1 class="title_ware" v-text="item.title"></h1>
+                            <ul class="collection_label">
+                                <li class="item_label" v-for="item in item.label" v-text="item"></li>
+                            </ul>
+                        </div>
+                        <img src="" alt="12" class="img_ware">
+                    </div>
+                    <div class="secondPattern" v-if="(item.index)%2==0">
+                        <img src="" alt="" class="img_ware">
+                        <div class="show_ware">
+                            <h1 class="title_ware" v-text="item.title"></h1>
+                            <ul class="collection_label">
+                                <li class="item_label" v-for="item in item.label" v-text="item"></li>
+                            </ul>
+                        </div>
+                        <img src="img/pattern2.png" alt="" class="img_pattern2">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="module_guideBar">
+            <button type="button" class="button_material">活动物资</button>
+            <button type="button" class="button_me">我的</button>
+            <button type="button" class="button_gift">送给社员</button>
+        </div>
     </div>
 </body>
 </html>

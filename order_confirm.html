@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css/store_all.css">
+    <link rel="stylesheet" href="css/order_confirm.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/mobileFontSize.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/order_confirm.js"></script>
+</head>
+<body>
+    <div class="module_topBar">
+        <button type="button" class="button_back">
+            <img src="img/left.png" alt="" class="img_back">
+        </button>
+        <h1 class="title_topBar">确认订单</h1>
+    </div>
+    <div class="module_confirm" id="module_confirm">
+        <div class="module_receive">
+            <p class="module_receiverName"><img class="img_receiverName" src="img/receiver.png" alt=""><span class="text_receiverName">21</span></p>
+            <p class="module_address"><img class="img_address" src="img/address.png" alt=""><span class="text_address">21</span></p>
+        </div>
+        <div class="module_ware">
+            <ul class="collection_ware">
+                <li class="item_ware">
+                    <img src="" alt="" class="img_ware">
+                    <div class="text_ware">
+                        <h1 class="title_ware">12</h1>
+                        <div class="module_details">
+                            <p class="module_style">样式：<span class="text_style"></span></p>
+                            <div class="text_priceAndNum">
+                                <span class="text_price">12</span>
+                                <span class="text_num">12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="module_message">
+            <div class="module_express">
+                <p class="module_sendWay"><span class="text_sendWay">快递</span></p>
+                <p class="module_cost"><span class="text_cost">12</span></p>
+            </div>
+            <div class="text_message">
+                <label for="area_message" class="label_messageArea">买家留言：(选填，对本次交易的特殊说明)</label>
+                <textarea name="area_message" id="area_message">12</textarea>
+            </div>
+        </div>
+    </div>
+    <div class="module_guideBar" id="module_guideBar">
+        <div class="module_count">
+            <span class="text_numAll">2</span>
+            <span class="text_payAll">2.00</span>
+        </div>
+        <button type="button" class="button_pay">提交订单</button>
+    </div>
+</body>
+</html>

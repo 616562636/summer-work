@@ -183,3 +183,28 @@
     line-height: .4rem;
     font-size: .2rem;
 }
+#collection_typeFirst,#collection_typeSecond {
+    display: inline-block;
+    vertical-align: top;
+    width: 3rem;
+    height: .5rem;
+    border-radius: .15rem;
+    font-size: .3rem;
+}
+.module_tag {
+    margin-bottom: .15rem;
+}
+.title_tag {
+    font-weight: normal;
+    font-size: .25rem;
+    margin-bottom: .1rem;
+}
+.item_tag {
+    border:.01rem solid #000;
+    height: .4rem;
+    border-radius: .15rem;
+    line-height: .4rem;
+    text-indent: .15rem;
+    font-size: .25rem;
+    width: 2rem;
+}

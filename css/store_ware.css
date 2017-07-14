@@ -19,7 +19,6 @@
 .title_topBar {
     display: inline-block;
     vertical-align: top;
-
     color: #fff;
     font-weight: normal;
     font-size: .36rem;
@@ -173,4 +172,38 @@
     border-radius: .1rem;
     border:.01rem solid #000;
     margin-left: .3rem;
+}
+.img_user {
+    display: inline-block;
+    vertical-align: top;
+    height: .64rem;
+    width: .64rem;
+    border-radius: .32rem;
+    margin-left: .27rem;
+}
+.module_user {
+    height: .64rem;
+    margin-bottom: .25rem;
+}
+.collection_evaluate {
+    padding-top: .48rem;
+}
+.text_userName {
+    display: inline-block;
+    vertical-align: top;
+    font-size: .3rem;
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    margin-left: .2rem;
+}
+.unit_evaluate {
+    padding-bottom: .48rem;
+    margin-bottom: .48rem;
+    border-bottom: .01rem solid #ccc;
+}
+.text_evaluate {
+    width: 7rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
 }

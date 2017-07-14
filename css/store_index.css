@@ -186,4 +186,7 @@ body {
     font-size: .36rem;
     color: rgb(155,196,39);
 }
+#module_index {
+    height: 100%;
+}
 

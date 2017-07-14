@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    height: 100%;
+}
+.module_topBar {
+    width: 100%;
+    height: .8rem;
+    background: rgb(82,184,180);
+}
+.button_back {
+    display: inline-block;
+    vertical-align: top;
+    background: inherit;
+    height: .8rem;
+    line-height: .8rem;
+    width: .8rem;
+}
+.button_back .img_back {
+    width: .3rem;
+    margin-top: .13rem;
+    margin-left: -.03rem;
+}
+.title_topBar {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-weight: normal;
+    font-size: .36rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-indent: 24%;
+    width: calc(100% - .9rem);
+}
+.text_payNum {
+    display: block;
+    margin-left: .3rem;
+}
+.text_payNum:before {
+    content: '订单号：';
+}
+.text_payCost {
+    display: block;
+}
+.text_payCost:before {
+    content: '金额：¥';
+}
+.module_payNum {
+    padding-top: .45rem;
+    height: 3.55rem;
+    width: 100%;
+    border-bottom: .01rem solid #000;
+    margin-bottom: .28rem;
+    font-size: .35rem;
+}
+.pay_tip {
+    margin-top: .25rem;
+    margin-left: .3rem;
+    margin-bottom: .95rem;
+}
+.text_payCost {
+    margin-left: .3rem;
+}
+.img_payWay {
+    display: inline-block;
+    vertical-align: top;
+    width: .8rem;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    margin-left: .3rem;
+}
+.item_payWay {
+    display: block;
+    height: 1rem;
+    width: 100%;
+    border-top: .01rem solid #000;
+    border-bottom: .01rem solid #000;
+    margin-bottom: .03rem;
+}
+.text_payName {
+    display: inline-block;
+    vertical-align: top;
+    height: 1rem;
+    width: 5.3rem;
+    line-height: 1rem;
+    text-indent: .2rem;
+    margin-left: .2rem;
+    font-size: .4rem;
+}
+.item_status {
+    display: inline-block;
+    vertical-align: top;
+    height: .4rem;
+    width: .4rem;
+    background: #fff;
+    border: .01rem solid #000;
+    border-radius: .2rem;
+    margin-top: .28rem;
+}
+.img_background {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: opacity(70%);
+}
+.button_pay {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    width: 100%;
+    background: #ababab;
+    color: #fff;
+    font-size: .45rem;
+    text-align: center;
+}
+.change_green {
+    background: rgb(76,211,133);
+    border-color: rgb(25,178,140);
+}
+#module_pay {
+    height: 100%;
+}

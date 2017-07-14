@@ -3,7 +3,8 @@ $(function () {
         el:'#module_ware',
         data:{
             status:1,
-            mu:[{"text":"12",index:1},{"text":"23",index:2},{"text":"34",index:3},{"text":"23",index:4},{"text":"34",index:5},{"text":"23",index:6},{"text":"34",index:7}]
+            mu:[{"text":"12",index:1},{"text":"23",index:2},{"text":"34",index:3},{"text":"23",index:4},{"text":"34",index:5},{"text":"23",index:6},{"text":"34",index:7}],
+            sigmaa:[{"name":"a","p":"231"},{"name":"b","p":"32"}]
         },
         methods:{
             statusSwitch: function (curStatus) {
@@ -13,5 +14,5 @@ $(function () {
                 $(".hr_status").animate({"left":targetLeft+"rem"});
             }
         }
-    })
+    });
 });
