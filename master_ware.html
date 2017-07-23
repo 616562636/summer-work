@@ -7,33 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="css/master_all.css">
     <link rel="stylesheet" href="css/master_ware.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/fontSize.js"></script>
     <script src="js/vue.min.js"></script>
+    <script src="js/master_ware.js"></script>
 </head>
 <body>
-    <header class="module_header">
-        <h1 class="title_ware">社团物资采购系统-后台管理</h1>
-    </header>
-    <div class="module_ware">
-        <button id="button_upload">商品上架</button>
-        <div id="collection_ware">
-            <div class="item_ware" v-for="item in items">
-                <img src="img/2.png" alt="" class="img_ware">
-                <div class="view_ware">
-                    <div class="detail_ware">
-                        <p class="name_ware">名称：<span v-text="item.name">1</span></p>
-                        <p class="price_ware">价格：<span v-text="item.price">1</span></p>
-                        <p class="stock_ware">库存：<span v-text="item.stock">1</span></p>
-                        <p class="sales_ware">销量：<span v-text="item.sales">1</span></p>
+    <div id="app_ware">
+        <header class="module_header">
+            <h1 class="title_ware">社团物资采购系统-后台管理</h1>
+        </header>
+        <div class="module_ware">
+            <button id="button_upload">商品上架</button>
+            <ul class="collection_ware">
+                <li class="item_ware" v-for="item in items">
+                    <img src="img/2.png" alt="" class="img_ware">
+                    <div class="view_ware">
+                        <div class="detail_ware">
+                            <p class="name_ware">名称：<span v-text="item.name">1</span></p>
+                            <p class="price_ware">价格：<span v-text="item.price">1</span></p>
+                            <p class="stock_ware">库存：<span v-text="item.stock">1</span></p>
+                            <p class="sales_ware">销量：<span v-text="item.sales">1</span></p>
+                        </div>
+                        <div class="operate_ware">
+                            <button class="button_edit">编辑</button>
+                            <button class="button_delete">下架商品</button>
+                        </div>
                     </div>
-                    <div class="operate_ware">
-                        <button class="button_edit">编辑</button>
-                        <button class="button_delete">下架商品</button>
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <script src="js/master_ware.js"></script>
 </body>
 </html>

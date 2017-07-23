@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="css/store_all.css">
     <link rel="stylesheet" href="css/store_index.css">
-    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/mobileFontSize.js"></script>
-    <script src="js/swiper-3.4.0.min.js"></script>
     <script src="js/vue.min.js"></script>
     <script src="js/store_index.js"></script>
 </head>
@@ -25,14 +23,16 @@
                 <img src="img/search.png" alt="" class="img_search">
             </button>
         </div>
-        <div class="swiper-container" id="module_activity">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="item in adUrl"><img src="" v-bind:data-src="item.pic" v-on:click="skip2activity(item.url)" alt="" class="img_ad"></div>
-            </div>
-            <button type="button" class="button_prev">
+        <div class="module_activity" id="module_activity">
+            <ul class="collection_activity">
+                <li class="item_activity" v-for="(item,index) in adUrl" v-show="adStatus==(index+1)" v-bind:data-index="index+1" v-on:click="skip2activity(item.url)">
+                    <img src="" v-bind:data-src="item.pic" alt="" class="img_activity">
+                </li>
+            </ul>
+            <button type="button" class="button_prev" v-on:click="skip2prev">
                 <img src="img/left.png" alt="" class="img_prev">
             </button>
-            <button type="button" class="button_next">
+            <button type="button" class="button_next" v-on:click="skip2next">
                 <img src="img/left.png" alt="" class="img_next">
             </button>
         </div>
