@@ -36,47 +36,31 @@
                 <div id="area_pic">+</div>
             </div>
             <div class="collection_price">
-                <div class="item_price">
-                    <div class="module_num">
-                        <label for="input_num1" class="label_num">商品数量：</label>
-                        <input type="text" id="input_num1" class="input_num">
-                    </div>
-                    <div class="module_price">
-                        <label for="input_price1" class="label_price">对应价格：</label>
-                        <input type="text" id="input_price1" class="input_price">
+                <div class="module_num">
+                    <div class="area_addNum">
+                        <label for="input_num" class="label_num">商品数量：</label>
+                        <input type="text" id="input_num" v-model="num" class="input_num">
                     </div>
                 </div>
-                <div class="item_price">
-                    <div class="module_num">
-                        <label for="input_num2" class="label_num">商品数量：</label>
-                        <input type="text" id="input_num2" class="input_num">
-                    </div>
-                    <div class="module_price">
-                        <label for="input_price2" class="label_price">对应价格：</label>
-                        <input type="text" id="input_price2" class="input_price">
-                    </div>
+                <div class="module_price">
+                    <label for="input_price" class="label_price">对应价格：</label>
+                    <input type="number" id="input_price" v-model="price" class="input_price">
                 </div>
-                <div class="item_price">
-                    <div class="module_num">
-                        <label for="input_num3" class="label_num">商品数量：</label>
-                        <input type="text" id="input_num3" class="input_num">
-                    </div>
-                    <div class="module_price">
-                        <label for="input_price3" class="label_price">对应价格：</label>
-                        <input type="text" id="input_price3" class="input_price">
-                    </div>
-                </div>
+                <button type="button" id="button_addPrice" v-on:click="addPrice">+</button>
             </div>
+            <ul class="module_showNumAndPrice">
+               <li class="item_numAndPrice" v-for="(item,index) in collectionNumAndPrice"><span v-text="item[0]">1</span>/<span v-text="item[1]">2</span><button type="button" v-on:click="deletePrice(index)">x</button></li>
+            </ul>
             <div class="module_stock">
                 <label for="input_stock" class="label_stock">库存：</label>
-                <input type="text" id="input_stock">
+                <input type="number" v-model="inventory" id="input_stock">
             </div>
             <div class="module_style">
                 <h1 class="title_style">样式：</h1>
                 <div class="collection_style">
-                    <input type="text" class="item_style">
+                    <input type="text" v-model="styleName" class="item_style">
                 </div>
-                <button id="button_addStyle">+</button>
+                <button type="button" id="button_addStyle" v-on:click="addCard">+</button>
             </div>
             <div class="module_type">
                 <h1 class="title_type">商品类别：</h1>
@@ -90,6 +74,23 @@
                     <option value="">23</option>
                 </select>
             </div>
+            <ul class="module_wareCard">
+               <li class="item_wareCard" v-for="(item,index) in style">
+                   <h1>样式</h1>
+                   <span v-text="item[0]"></span>
+                   <h1>库存</h1>
+                   <span v-text="item[1]"></span>
+                   <h1>数量</h1>
+                    <ul>
+                        <li v-for="item in item[2]" v-text="item"></li>
+                    </ul>
+                   <h1>价格</h1>
+                   <ul>
+                       <li v-for="item in item[3]" v-text="item"></li>
+                    </ul>
+                   <button type="button" v-on:click="deleteCard(index)">删除</button>
+               </li>
+            </ul>
             <div class="module_tag">
                 <h1 class="title_tag">标签：</h1>
                 <input type="text" class="item_tag">

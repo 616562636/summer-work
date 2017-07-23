@@ -73,7 +73,7 @@
 .module_num {
     margin-right: .6rem;
 }
-.item_price {
+.collection_price {
     margin-bottom: .2rem;
 }
 .label_stock {
@@ -106,7 +106,7 @@
     display: inline-block;
     vertical-align: top;
 }
-#button_addStyle {
+#button_addStyle,#button_addPrice {
     display: inline-block;
     vertical-align: top;
     height: .54rem;
@@ -211,4 +211,10 @@
 .title_longPic {
     font-weight: normal;
     font-size: .25rem;
+}
+.item_wareCard {
+    display: inline-block;
+    vertical-align: top;
+    width: 4rem;
+    border: .01rem solid #000;
 }

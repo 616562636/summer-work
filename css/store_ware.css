@@ -51,6 +51,8 @@
     left: .1rem;
     background: #000;
     height: .03rem;
+    border: 0;
+    outline: 0;
 }
 .module_interaction {
     display: inline-block;
