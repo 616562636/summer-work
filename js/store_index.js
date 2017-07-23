@@ -5,7 +5,7 @@ $(function () {
             adUrl:[{"url":"http://www.baidu.com","pic": "http://qiniu.yoogus.com/add/%E5%A5%B3%E7%94%9F%E8%8A%825%E7%A8%BF.png"},
                 {"url":"http://www.soso.com","pic": "http://qiniu.yoogus.com/add/%E5%A5%B3%E7%94%9F%E8%8A%82%E7%94%B7%E7%94%9F%E7%89%883.png"}
                 ,{"url":"http://www.soso.com","pic": "http://qiniu.yoogus.com/add/%E5%A5%B3%E7%94%9F%E8%8A%82%E7%94%B7%E7%94%9F%E7%89%883.png"}],
-                json:[{"index":2},{"index":3}],
+                json:[{"index":2},{"index":3},{"index":4},{"index":5}],
                 adStatus:1,
                 adNum:0
         },
