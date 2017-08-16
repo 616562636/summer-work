@@ -161,7 +161,7 @@ body {
     background: #f8f8f8;
 }
 .collection_ware {
-    height: 5.9rem;
+    height: 4rem;
     overflow: scroll;
 }
 .button_me {
@@ -206,4 +206,5 @@ body {
     height: 100%;
     width: 100%;
 }
+
 
